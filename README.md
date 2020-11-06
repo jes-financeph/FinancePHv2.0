@@ -1,78 +1,112 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+# Finance PH Project Repository v2.0
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+Hello Friend, welcome back. Here is where all the hard work... The blood, sweat, and tears have resulted into. The culmination of staring at my monitor for several hours at a time, to the point where my eyes start to bleed. I loved doing this project and would like to share my experience:
 
-## About Laravel
+Key takeaways from the experience:
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+- I am never using the Vuetify Navbar again.
+- I've learned so much from the past 2 weeks and although I'm fairly new to backend development, I'm starting to be able to map in my head what I need to do in the backend because I've developed a fundamental understanding while creating this project.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- I spent a lot of my time on the U.I. performing implementations that would never make it to production. did a lot of things that never made it to this final repo. The trial and error costed me time (as well as the navbar.) 
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+-  My eyes have feelings.
+## Important Note & Updates: 
+- For admin account it IS ABSOLUTELY REQUIRED that you register your name as "admin" to see the admin panel.
+- Admin Panel has been patched and is accessible.
+- Modified the navbar to show the name of the user if logged in.
 
-## Learning Laravel
+## Pre-requisites
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+Make sure you have the following software:
+- XAMPP Control Panel >= 3.2.4
+- Composer >= v2.0.4
+- Node >= 12.8.3
+- PHP Version >= 7.4.11
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+## Installation
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
+1. Fork this Repository
+2. Clone this Repository
+```bash
+git clone https://github.com/pacholoamit/FinancePH.git
+```
+3. Once you clone the repository initiate XAMPP:
+- Navigate into the htdocs directory
+```
+C:\xampp\htdocs
+```
+- Create a folder named "pro1"
+- Take financeph_backend and place it in the 'pro1' folder.
+4. Navigate into financeph_backend folder, Open the Command-Line-Interface (CLI), then:
+```composer
+Run composer update
+```
+This will update your PHP dependencies for the back-end
+5. While still in your financeph_backend folder.
+- Navigate to 'public' folder then 'financeph_frontend' folder
+- Your current directory should be like this:
+```
+C:\xampp\htdocs\pro1\financeph_backend\public\financeph_frontend
+```
+6. Open your CLI in the current directory (financeph_frontend) and run:
+```node
+npm install
+``` 
+This will install all your Node modules for the front-end side.
+7. Installation section finished.
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
 
-## Code of Conduct
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Usage
+1. Open your XAMPP control panel
+2. Start the "Apache" and "MySQL" server.
+3. Navigate into your financeph_backend folder which should be in a directory like this if you followed my instructions:
+```
+C:\xampp\htdocs\pro1\financeph_backend
+```
+4. Open the command-line-interface and run:
+```composer
+php artisan serve
+```
+this will set up the laravel server which looks like this:
+```
+ PHP 7.4.11 Development Server (http://127.0.0.1:8000) started
+```
+4a. We need to configure our .ENV file in laravel to connect it to our database, at this point I'm expecting you to create a database in phpmyadmin. You can do this if you by initiating the "appache" and "mysql" server in XAMPP and typing 'localhost' in the browser.
 
-## Security Vulnerabilities
+4b. Define your database in the .ENV file. It should look something like this:
+```
+DB_DATABASE={YOUR DATABASE HERE}
+```
+4c. Migrate the tables to the database by opening the command-line-interface and inputting:
+```composer
+php artisan migrate
+```
+5. Navigate into your financeph_frontend folder which should be in a directory like this if you followed my instructions:
+```
+C:\xampp\htdocs\pro1\financeph_backend\public\financeph_frontend
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+```
+6. Open the command-line-interface and run:
+```
+npm run serve
+```
+this will setup your development server like this:
+```
+ App running at:
+  - Local:   http://localhost:8080/
+  - Network: http://192.168.42.239:8080/
+```
+7. Open your browser and naviate to the development server and it should all work.
+
+
+
+
+
+
 
 ## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Driver's license.
